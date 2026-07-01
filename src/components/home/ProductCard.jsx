@@ -1,20 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import products from '../data/products'
-import SectionTitle from '../components/common/SectionTitle';
+import { Link } from "react-router-dom";
 
-const Products = () => {
+const ProductCard = ({ product }) => {
   return (
-        <section className="bg-[#FFF8F3] py-20">
-      <div className="mx-auto max-w-7xl px-6">
-        {/* Heading */}
-        <SectionTitle
-          title="Featured Creations"
-          subtitle="Discover our most loved handmade creations crafted with passion,
-            care, and attention to every little detail."/>
-            <div className='mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4'>
-          
-      {products.map((product) =>(
     <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
       {/* Product Image */}
       <div className="overflow-hidden">
@@ -52,13 +39,7 @@ const Products = () => {
         </Link>
       </div>
     </div>
-      )
-    
-    )}
-    </div>
-    </div>
-    </section>
-  )
-}
+  );
+};
 
-export default Products
+export default ProductCard;
