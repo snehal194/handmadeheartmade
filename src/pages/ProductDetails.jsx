@@ -1,7 +1,7 @@
 import { useState,useEffect } from 'react';
 import { useParams ,Link} from 'react-router-dom'
 import products from '../data/products';
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram  } from "react-icons/fa";
 
 const ProductDetails = () => {
     const{id} = useParams();
@@ -89,8 +89,25 @@ const ProductDetails = () => {
             </ul>
         </div>
             <p>{product.featured}</p>
-            <a className="mt-8 inline-flex items-center gap-2 rounded-full bg-green-500 px-6 py-3 text-white font-semibold hover:bg-green-600">
-              <FaWhatsapp/> Order on WhatsApp
+            <a
+              href={`https://wa.me/919930499054?text=${encodeURIComponent(
+                `Hi! I'm interested in ${product.name}.`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center pe-2 gap-2 rounded-full bg-green-500 px-6 py-3 font-semibold text-white transition hover:bg-green-600"
+            >
+              <FaWhatsapp className="text-xl" />
+              Order on WhatsApp
+            </a>
+            <a
+              href="https://www.instagram.com/handmade_heart_made"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-6 py-3 text-white font-semibold hover:opacity-90"
+            >
+              <FaInstagram className="text-xl" />
+              Visit Our Instagram
             </a>
         </div>
       </div>
