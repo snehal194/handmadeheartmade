@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
       {/* Product Image */}
       <div className="overflow-hidden">
         <img
-          src={product.image}
+          src={product.images[0]}
           alt={product.name}
           className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
