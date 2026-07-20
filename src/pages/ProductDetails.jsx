@@ -95,11 +95,12 @@ const ProductDetails = () => {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center pe-2 gap-2 rounded-full bg-green-500 px-6 py-3 font-semibold text-white transition hover:bg-green-600"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-green-500 px-6 py-3 font-semibold text-white transition hover:bg-green-600"
             >
               <FaWhatsapp className="text-xl" />
               Order on WhatsApp
             </a>
+            &nbsp;
             <a
               href="https://www.instagram.com/handmade_heart_made"
               target="_blank"
