@@ -104,6 +104,16 @@ const gallery = [
     image: "/products/embroidery/wedding/2.jpg",
     category: "Wedding",
   },
+  {
+    id: 22,
+    image: "/products/wooden/1.png",
+    category: "Wooden",
+  },
+    {
+    id: 23,
+    image: "/products/wooden/2.png",
+    category: "Wooden",
+  },
 ];
 
 export default gallery;

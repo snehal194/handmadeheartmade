@@ -1,11 +1,14 @@
 const products = [
-  
-
-    {
+  {
     id: 1,
     name: "Wedding Couple Hoop",
     category: "Wedding",
-    image: "/products/embroidery/wedding/c-4.jpg",
+    images: [
+      "/products/embroidery/wedding/c-4.jpg",
+      "/products/embroidery/wedding/c-4.1.webp",
+      "/products/embroidery/wedding/c-4.2.jpg",
+      "/products/embroidery/wedding/c-4.3.webp",
+    ],
     description: "Personalized handmade wedding embroidery hoop.",
     price: 1800,
     featured: true,
@@ -21,7 +24,10 @@ const products = [
     id: 2,
     name: "Crochet Hair Accessories",
     category: "Crochet",
-    image: "/products/crochet/2.png",
+    images: [ 
+      "/products/crochet/2.png",
+      "/products/crochet/3.jpg",
+    ],
     description: "Everlasting crochet flowers.",
     price: 350,
     featured: true,
@@ -33,7 +39,7 @@ const products = [
     id: 3,
     name: "Hand Embroidery on Cloth",
     category: "Cloth",
-    image: "/products/embroidery/cloth/3.jpg",
+    images: [ "/products/embroidery/cloth/3.jpg"],
     description: "Beautiful embroidery on clothes.",
     price: 1200,
     featured: true,
@@ -48,18 +54,18 @@ const products = [
     id: 4,
     name: "Wooden Gift Box",
     category: "Wooden",
-    image: "/products/wooden/1.jpg",
+    images: [ "/products/wooden/2.png"],
     description: "Beautiful handmade wooden gift box.",
     price: 950,
     featured: true,
     delivery: "5 Days",
     materials: ["Wood"],
   },
-    {
+  {
     id: 5,
     name: "Hand Embroidery on Cloth",
     category: "Cloth",
-    image: "/products/embroidery/cloth/2.jpg",
+    images: [ "/products/embroidery/cloth/2.jpg"],
     description: "Beautiful embroidery on clothes.",
     price: 1200,
     featured: true,
@@ -68,6 +74,75 @@ const products = [
       "Cotton Fabric",
       "Embroidery Thread",
     ],
+  },
+  {
+    id: 6,
+    name: "Wooden Gift Box",
+    category: "Wooden",
+    images: [ "/products/wooden/1.png"],
+    description: "Beautiful handmade wooden gift box.",
+    price: 950,
+    featured: true,
+    delivery: "5 Days",
+    materials: ["Wood"],
+  },
+    {
+    id: 7,
+    name: "Hand Embroidery Hoop",
+    category: "Nature",
+    images: [ 
+      "/products/embroidery/nature/5.webp",
+      "/products/embroidery/nature/5-1.webp",
+      "/products/embroidery/nature/5-2.webp",
+    ],
+    description: "Beautiful embroidery on clothes.",
+    price: 1200,
+    featured: true,
+    delivery: "7 Days",
+    materials: [
+      "Cotton Fabric",
+      "Embroidery Thread",
+    ],
+  },
+   {
+    id: 8,
+    name: "Wedding Couple Hoop",
+    category: "Wedding",
+    images: [
+      "/products/embroidery/wedding/h-4.jpg",
+      "/products/embroidery/wedding/h-1.jpg",
+      "/products/embroidery/wedding/h-2.jpg",
+      "/products/embroidery/wedding/h-3.jpg",
+    ],
+    description: "Personalized handmade wedding embroidery hoop.",
+    price: 1800,
+    featured: true,
+    delivery: "7-10 Days",
+    materials: [
+      "Cotton Fabric",
+      "Embroidery Thread",
+      "Wooden Hoop",
+    ],
+  },
+    {
+    id: 9,
+    name: "Wedding Couple Hoop",
+    category: "Wedding",
+    images: [
+      "/products/embroidery/wedding/c-1.jpg",
+      "/products/embroidery/wedding/c-2.jpg",
+      "/products/embroidery/wedding/c-3.jpg",
+    ],
+    description: "Personalized handmade wedding embroidery hoop.",
+    price: 1800,
+    featured: true,
+    delivery: "7-10 Days",
+    materials: [
+      "Cotton Fabric",
+      "Embroidery Thread",
+      "Wooden Hoop",
+    ],
+    
   },
 ];
 

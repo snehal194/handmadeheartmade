@@ -27,7 +27,7 @@ const categories = [
   {
     id: 6,
     title: "Wooden Work",
-    image: "/products/wooden/1.jpg",
+    image: "/products/wooden/1.png",
   },
 ];
 
