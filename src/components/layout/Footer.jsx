@@ -40,7 +40,7 @@ function Footer() {
             <h2 className="text-sm font-bold mb-2 text-[#db6687]">Contact</h2>
             <p className="text-sm font-thin">Follow us on social media to find out the latest updates.</p>
             <div className="flex gap-4 mt-4 text-2xl">
-              <a href="#" aria-label="Instagram ">
+              <a href="https://www.instagram.com/handmade_heart_made" aria-label="Instagram ">
                 <FaInstagram className="text-pink-500 text-2xl"/>
               </a>
 

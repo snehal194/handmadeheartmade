@@ -144,6 +144,42 @@ const products = [
     ],
     
   },
+      {
+    id: 9,
+    name: "Wedding Couple Hoop",
+    category: "Wedding",
+    images: [
+      "/products/embroidery/wedding/2.jpg",
+    ],
+    description: "Personalized handmade wedding embroidery hoop.",
+    price: 1800,
+    featured: true,
+    delivery: "7-10 Days",
+    materials: [
+      "Cotton Fabric",
+      "Embroidery Thread",
+      "Wooden Hoop",
+    ],
+    
+  },
+      {
+    id: 9,
+    name: "Wedding Couple Hoop",
+    category: "Wedding",
+    images: [
+      "/products/embroidery/wedding/co-1.jpg",
+    ],
+    description: "Personalized handmade wedding embroidery hoop.",
+    price: 1800,
+    featured: true,
+    delivery: "7-10 Days",
+    materials: [
+      "Cotton Fabric",
+      "Embroidery Thread",
+      "Wooden Hoop",
+    ],
+    
+  },
 ];
 
 export default products;
