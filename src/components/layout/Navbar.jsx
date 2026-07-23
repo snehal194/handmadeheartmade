@@ -34,7 +34,7 @@ function Navbar() {
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
-                `font-medium transition ${
+                `font-medium text-sm transition ${
                   isActive
                     ? "text-pink-600"
                     : "text-gray-700 hover:text-pink-600"
