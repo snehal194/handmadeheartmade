@@ -5,11 +5,14 @@ import { FaWhatsapp, FaInstagram,  FaHeart, FaPaintBrush, FaBoxOpen, FaTruck, Fa
 
 
 const ProductDetails = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
     const{id} = useParams();
     const product = products.find(
         (item) => item.id === Number(id)
     ); 
     const [selectedImage, setSelectedImage] = useState( product?.images?.[0] || null);
+    const[showLightbox, setShowLightbox]  = useState(false);
+
     useEffect(() => {
       if (product?.images?.length) {
         setSelectedImage(product.images[0]);
@@ -36,8 +39,21 @@ const ProductDetails = () => {
 
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2">
         <div>
-          <img src={selectedImage} alt={product.name} className="w-full max-h-[450px] rounded-3xl object-contain"/>
+          <img src={selectedImage} alt={product.name} onClick={() => setShowLightbox(true)} className="w-full max-h-[450px] cursor-zoom-in rounded-3xl object-contain"/>
           <div className="mt-4 flex gap-3 justify-center overflow-x-auto pb-2">
+            {showLightbox && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+                onClick={() => setShowLightbox(false)}
+              >
+                <img
+                  src={selectedImage}
+                  alt={product.name}
+                  className="max-h-[90vh] max-w-[90vw] rounded-xl"
+                  onClick={(e) => e.stopPropagation()}
+                />
+              </div>
+            )}
             {product.images.map((image, index) => (
               <img
                 key={index}
